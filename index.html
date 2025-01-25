@@ -1,1 +1,17 @@
+<html>
+<head>
+    <title>Password Protected</title>
+    <script>
+        const password = "yourpassword"; // Set your password here
+        const userPassword = prompt("Enter the password to access this page:");
+        if (userPassword !== password) {
+            document.body.innerHTML = "<h1>Access Denied</h1>";
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the protected page!</h1>
+    <p>This is the content of the page.</p>
+</body>
+</html>
 <h1>Hello Motherfucker</h1>

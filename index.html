@@ -1,11 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Protected</title>
     <script>
         const password = "fuckoff"; // Set your password here
         const userPassword = prompt("Enter the password to access this page:");
         if (userPassword !== password) {
             document.body.innerHTML = "<h1>Access Denied</h1>";
+        } else {
+            const script = document.createElement('script');
+            script.src = "dancer.js";
+            document.head.appendChild(script);
         }
     </script>
 </head>
@@ -13,6 +20,5 @@
     <h1>Welcome to the protected page!</h1>
     <p>This is the content of the page.</p>
     <h1>Hello Mf</h1>
-
 </body>
 </html>
